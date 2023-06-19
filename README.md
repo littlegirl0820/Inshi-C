@@ -13,7 +13,16 @@ cd build
 # pwd : Inshi-C/R5
 ./build/code1
 ```
+~~とかするとセグフォります．~~
+
+(追記)\
+セグフォらないんだけど前者は`Inshi-C/R5/build/input.txt`,後者は`Inshi-C/R5/input.txt`を参照しているので見てるファイルが違います．なので書き換える際は注意してください．
+```bash
+# pwd : Inshi-C
+./R5/build/code1
+```
 とかするとセグフォります．
+
 で，`printf`とかしてない年は実行しても何も起こらないので`printf`を追加するなりなんなりしてください．
 
 素直に
